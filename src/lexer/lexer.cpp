@@ -1,7 +1,7 @@
-#include <unordered_map>
-#include <bits/stdc++.h>
 #include "../helper/errors.hpp"
 #include "lexer.hpp"
+#include <unordered_map>
+#include <bits/stdc++.h>
 
 Lexer::Lexer(const std::string& source, const std::string& filename) {
     scanner.current = source;
@@ -182,7 +182,7 @@ std::unique_ptr<Lexer::Token> Lexer::scanToken() {
     return makeToken(TokenKind::END_OF_FILE);
 
   token = *makeToken(TokenKind::ERROR_TOKEN);
-  char c = Lexer::advance();
+  char c = advance();
 
   if (isalpha(c))
     return identifier();

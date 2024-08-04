@@ -1,4 +1,5 @@
 #pragma once
+
 #include <stdlib.h>
 #define ObsidianVersion "v0.0.1"
 

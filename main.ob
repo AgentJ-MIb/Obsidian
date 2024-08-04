@@ -1,4 +1,1 @@
-fn main() {
-    print("Hello, world!\n");~
-    exit(0);~
-}
+fn

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../inc/colorize.h"
+#include "../../inc/colorize.hpp"
 #include "../lexer/lexer.hpp"
 #include "../common.hpp"
 #include <iostream>
