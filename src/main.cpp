@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
   std::unique_ptr<Lexer::Token> token = tokens.scanToken();
   
   while (token->kind != TokenKind::END_OF_FILE) {
-    std::cout << token->kind << std::endl;
+    std::cout << "Token: " << token->lexem << " Kind: " << static_cast<int>(token->kind) << std::endl;
     token = tokens.scanToken();
   }
   return 0;

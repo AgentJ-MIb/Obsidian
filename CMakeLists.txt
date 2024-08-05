@@ -15,6 +15,7 @@ set(OBSIDIAN_HEADER_FILES
 set(OBSIDIAN_SOURCE_FILES
     src/main.cpp
     src/lexer/lexer.cpp
+    src/lexer/maps.cpp
 )
 
 add_executable(obsidian ${OBSIDIAN_HEADER_FILES} ${OBSIDIAN_SOURCE_FILES})
